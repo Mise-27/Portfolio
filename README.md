@@ -30,20 +30,23 @@ My mission is to integrate AI and software into agriculture and business, making
 
 ---
 
-## 💻 Skills
 
-- **Programming:** Python, SQL, HTML, CSS
-- **Tools:** Git, GitHub, GitHub Pages
-- **Soft Skills:** Problem-solving, Communication, Teamwork
+## 💻 Programming Languages
+
+- Python  
+- SQL  
+- HTML  
+- CSS  
+
 
 ---
 
-## 💡 Tech Interests
+## 💡 Interests
 
-- Artificial Intelligence & Machine Learning
-- Data Science & Analytics
-- Software & Web Development
-- Technology for Social Impact
+- Artificial Intelligence: Building intelligent systems to address real-world challenges.
+- Data Science: Leveraging data for smarter decision-making.
+- Software Development: Crafting practical, innovative tools.
+- Web Development: Creating modern, responsive apps with good UX.
 
 ---
 

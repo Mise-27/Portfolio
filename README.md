@@ -13,9 +13,13 @@ This site showcases my journey, skills, and projects as a data-driven problem so
 
 ## 👀 Preview
 
-![Portfolio Screenshot 1](https://github.com/user-attachments/assets/cb3e6555-5167-4a24-a5f8-bc2ff10b623c)
-![Portfolio Screenshot 2](https://github.com/user-attachments/assets/9d4f8c32-e928-4071-be22-c1d5352f7a85)
-![Portfolio Screenshot 3](https://github.com/user-attachments/assets/a6f5bb98-9ae4-4259-b98d-18237436f569)
+![Portfolio Screenshot 1](<img width="1901" height="910" alt="image" src="https://github.com/user-attachments/assets/85beaaaa-e36d-4bf5-9309-d1609399fcd9" />)
+![Portfolio Screenshot 2](<img width="1900" height="914" alt="image" src="https://github.com/user-attachments/assets/1e966f02-f39a-4a9d-b3b2-a0018b9d2539" />)
+![Portfolio Screenshot 3](<img width="1892" height="902" alt="image" src="https://github.com/user-attachments/assets/a19a2ad7-ebef-466b-8f74-7a42da18ae2c" />)
+![Portfolio Screenshot 4](<img width="1898" height="833" alt="image" src="https://github.com/user-attachments/assets/598fdade-5c41-440b-b8b9-da25797a3486" />)
+![Portfolio Screenshot 4](<img width="1902" height="834" alt="image" src="https://github.com/user-attachments/assets/ec2c6953-4ab0-4960-935e-3039ed268cf7" />)
+
+
 
 ---
 

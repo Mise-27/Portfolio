@@ -58,7 +58,7 @@ It highlights my skills, background, projects, and passions in tech — especial
 ---
 
 ## 🧑‍💻 Author
--**Olajesu (Emmanuel) Tunmise**  
+**Olajesu (Emmanuel) Tunmise**  
 - **📧Email**: [olajesusemi027@gmail.com](mailto:olajesusemi027@gmail.com)
 - **🔗LinkedIn**: [tunmise-olajesu](https://linkedin.com/in/tunmise-olajesu-820baa248)
 - **🐱GitHub**: [@Mise-27](https://github.com/Mise-27)

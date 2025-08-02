@@ -1,81 +1,89 @@
-# Olajesu Tunmise - Personal Portfolio 🚀
+# 🚀 Olajesu Tunmise - Personal Portfolio
 
-This is my personal portfolio website built for the **PLP Academy Hackathon 1 (July 2025 Cohort)**.  
-It highlights my skills, background, projects, and passions in tech — especially my mission to improve agriculture through AI and data science.🌾💡
+Welcome to my personal portfolio website, crafted for the **PLP Academy Hackathon 1 (July 2025 Cohort)**.  
+This site showcases my journey, skills, and projects as a data-driven problem solver passionate about leveraging AI and technology to transform agriculture and business in Africa.
 
-## 🌐 Live Site
-**Hosted on GitHub Pages: [Click here](https://Mise-27.github.io/Portfolio/)**
+---
 
+## 🌐 Live Demo
+
+**View the portfolio:** [Mise-27.github.io/Portfolio](https://Mise-27.github.io/Portfolio/)
+
+---
 
 ## 👀 Preview
-![Preview] <img width="1893" height="909" alt="image" src="https://github.com/user-attachments/assets/cb3e6555-5167-4a24-a5f8-bc2ff10b623c" />
-<img width="1900" height="896" alt="image" src="https://github.com/user-attachments/assets/9d4f8c32-e928-4071-be22-c1d5352f7a85" />
-<img width="1887" height="683" alt="image" src="https://github.com/user-attachments/assets/a6f5bb98-9ae4-4259-b98d-18237436f569" />
 
+![Portfolio Screenshot 1](https://github.com/user-attachments/assets/cb3e6555-5167-4a24-a5f8-bc2ff10b623c)
+![Portfolio Screenshot 2](https://github.com/user-attachments/assets/9d4f8c32-e928-4071-be22-c1d5352f7a85)
+![Portfolio Screenshot 3](https://github.com/user-attachments/assets/a6f5bb98-9ae4-4259-b98d-18237436f569)
 
-## 🧠 About Me
+---
 
-> I'm Olajesu (Emmanuel) Tunmise — a Chemical Engineering graduate passionate about data-driven, practical tech solutions for African challenges. My goal is to integrate AI and software development into agriculture and business operations across the continent.
+## 🧑‍💼 About Me
+
+Hi, I'm **Olajesu (Emmanuel) Tunmise** — a Chemical Engineering graduate with a passion for building practical, data-driven tech solutions for Africa’s unique challenges.  
+My mission is to integrate AI and software into agriculture and business, making a real impact on productivity and growth across the continent.
 
 ---
 
 ## 🎓 Education
 
 - **B.Sc., Chemical Engineering**  
-  Lagos State University  
+  Lagos State University, Ojo  
   Second Class Upper Division (2025)
 
 - [📄 Download My CV](Tunmise_Olajesu_CV.pdf)
 
 ---
 
-## 💻 Programming Languages
+## 💻 Skills
 
-- Python
-- SQL
-- HTML
-- CSS
+- **Programming:** Python, SQL, HTML, CSS
+- **Tools:** Git, GitHub, GitHub Pages
+- **Soft Skills:** Problem-solving, Communication, Teamwork
 
 ---
 
 ## 💡 Tech Interests
 
-- Artificial Intelligence
-- Data Science
-- Software Development
-- Web Development
+- Artificial Intelligence & Machine Learning
+- Data Science & Analytics
+- Software & Web Development
+- Technology for Social Impact
 
 ---
 
-## 🔨 Projects
+## 🔨 Featured Projects
 
 ### [Stock Data Analysis](https://github.com/Mise-27/IBM-Data-Science-Projects)
-> Analysis of GameStop and Tesla stock data using Python and pandas. Completed as part of IBM Data Science course.
+> Comparative analysis of GameStop and Tesla stock data using Python and pandas.  
+> *Built for IBM Data Science course.*
 
 ### [Python Calculator](https://github.com/Mise-27/PLP-Academy-Assignments)
-> A basic Python CLI calculator built for PLP Academy assignment.
+> Simple command-line calculator in Python.  
+> *PLP Academy assignment.*
 
 ---
 
-## 🧑‍💻 Author
-**Olajesu (Emmanuel) Tunmise**  
-- **📧Email**: [olajesusemi027@gmail.com](mailto:olajesusemi027@gmail.com)
-- **🔗LinkedIn**: [tunmise-olajesu](https://linkedin.com/in/tunmise-olajesu-820baa248)
-- **🐱GitHub**: [@Mise-27](https://github.com/Mise-27)
+## 📬 Contact
+
+- **Email:** [olajesusemi027@gmail.com](mailto:olajesusemi027@gmail.com)
+- **LinkedIn:** [tunmise-olajesu](https://linkedin.com/in/tunmise-olajesu-820baa248)
+- **GitHub:** [@Mise-27](https://github.com/Mise-27)
+- **WhatsApp/Call:** [+234 902 194 9942](https://wa.me/2349021949942)
 
 ---
 
-## 🔧 Built With
+## 🛠️ Built With
 
-- HTML5
-- CSS3
-- Git & GitHub
-- GitHub Pages
+- HTML5 & CSS3 (Pure, no frameworks)
+- Git & GitHub for version control
+- GitHub Pages for deployment
 
 ---
 
 ## 🏁 Submission
 
-This portfolio was submitted as part of the **PLP Academy July 2025 Hackathon**.
+This portfolio was submitted for the **PLP Academy July 2025 Hackathon**.
 
-> 💡 Powered by passion. Built with discipline. Driven by impact.
+> 💡 *Powered by passion. Built with discipline. Driven by impact.*

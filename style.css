@@ -1,110 +1,205 @@
-/* General Reset */
+/* === Reset default spacing and box-sizing for consistency across browsers === */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Includes border and padding in element's total width/height */
 }
 
+/* === Base body styles: sets background, font, and text color for the whole page === */
 body {
-  background-color: #fdfdfd;
-  color: #333;
-  line-height: 1.6;
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* Soft gradient background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+  color: #1f2937; /* Deep text color for readability */
+  line-height: 1.6; /* Improves text spacing */
 }
 
+/* === .container: Centers content and limits its width === */
 .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
+  max-width: 1200px; /* Maximum width of content */
+  margin: auto;      /* Horizontally centers the container */
+  padding: 20px;     /* Adds space inside the container */
 }
 
-header {
-  background-color: #ffefd5;
-  text-align: center;
-  padding: 40px 20px;
+/* === header.hero: Styles the top hero section with image and intro === */
+header.hero {
+  display: flex;              /* Uses flexbox for layout */
+  flex-direction: column;     /* Stacks children vertically by default */
+  align-items: center;        /* Centers items horizontally */
+  padding: 50px 20px;         /* Adds space inside the header */
+  background: #f1f5f9;        /* Light background color */
+  border-bottom: 4px solid #3b82f6; /* Blue border at the bottom */
+  text-align: center;         /* Centers text */
 }
 
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 80%;
-  border: 4px solid #cc7722;
-  margin-bottom: 15px;
+/* === .hero-img: Styles the profile image in the hero section === */
+.hero-img {
+  width: 160px;               /* Fixed width */
+  height: 160px;              /* Fixed height */
+  border-radius: 50%;         /* Makes the image circular */
+  object-fit: cover;          /* Ensures image covers the area without distortion */
+  border: 4px solid #3b82f6;  /* Blue border around the image */
+  margin-bottom: 20px;        /* Space below the image */
 }
 
-h1 {
-  font-size: 2.2rem;
-  color: #cc7722;
+/* === .hero-right h1: Styles the main heading (name) in the hero section === */
+.hero-right h1 {
+  font-size: 2rem;            /* Large font size */
+  color: #1e3a8a;             /* Deep blue color */
 }
 
-section h2 {
-  color: #cc7722;
-  margin-bottom: 10px;
+/* === .hero-right p: Styles the intro text in the hero section === */
+.hero-right p {
+  font-size: 1.1rem;          /* Slightly larger text */
+  color: #334155;             /* Muted blue-gray color */
+  max-width: 600px;           /* Limits line length for readability */
 }
 
-ul {
-  list-style: square;
-  padding-left: 20px;
+/* === .section: Styles for each main content section (About, Education, etc.) === */
+.section {
+  background: #ffffffcc;      /* Semi-transparent white background */
+  margin: 40px 20px;          /* Space around each section */
+  padding: 30px;              /* Space inside each section */
+  border-radius: 16px;        /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); /* Subtle shadow for depth */
 }
 
-a {
-  color: #0066cc;
-  text-decoration: none;
+/* === .section h2: Styles section headings === */
+.section h2 {
+  color: #1e40af;             /* Blue heading color */
+  margin-bottom: 15px;        /* Space below heading */
+  font-size: 1.6rem;          /* Larger font size */
+  border-left: 5px solid #3b82f6; /* Blue bar to the left of heading */
+  padding-left: 10px;         /* Space between bar and text */
 }
 
-a:hover {
-  text-decoration: underline;
+/* === .section p, .section li: Styles paragraphs and list items in sections === */
+.section p,
+.section li {
+  font-size: 1rem;            /* Standard font size */
+  color: #1f2937;             /* Main text color */
+  margin-bottom: 10px;        /* Space below each item */
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: #cc7722;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
+/* === .skills: Styles the list of programming languages as badges === */
+.skills {
+  list-style: none;           /* Removes default list bullets */
+  display: flex;              /* Lays out badges in a row */
+  flex-wrap: wrap;            /* Allows badges to wrap to next line */
+  gap: 10px;                  /* Space between badges */
 }
 
-.btn:hover {
-  background-color: #aa5f1d;
+/* === .skills li: Individual skill badge styling === */
+.skills li {
+  background: #3b82f6;        /* Blue background */
+  color: white;               /* White text */
+  padding: 8px 14px;          /* Padding inside badge */
+  border-radius: 20px;        /* Pill-shaped badge */
+  font-weight: 500;           /* Medium font weight */
 }
 
-.projects .project {
-  margin-bottom: 15px;
+/* === .btn, button[type="submit"]: Styles for buttons and links that look like buttons === */
+.btn,
+button[type="submit"] {
+  background: #2563eb;        /* Blue background */
+  color: white;               /* White text */
+  padding: 10px 16px;         /* Padding inside button */
+  border: none;               /* No border */
+  border-radius: 8px;         /* Rounded corners */
+  text-decoration: none;      /* Removes underline from links */
+  font-weight: 500;           /* Medium font weight */
+  cursor: pointer;            /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Smooth background color transition */
+  display: inline-block;      /* Allows margin and padding */
+  margin-top: 10px;           /* Space above button */
 }
 
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 10px;
+/* === .btn:hover, button[type="submit"]:hover: Button hover effect === */
+.btn:hover,
+button[type="submit"]:hover {
+  background: #1e40af;        /* Darker blue on hover */
 }
 
-.contact input,
-.contact textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+/* === .project-btn: Styles project links as buttons === */
+.project-btn {
+  background: #2563eb;        /* Blue background */
+  color: #ffffff !important;  /* White text, overrides other styles */
+  padding: 10px 16px;         /* Padding inside button */
+  border-radius: 6px;         /* Slightly rounded corners */
+  text-decoration: none;      /* No underline */
+  font-weight: 500;           /* Medium font weight */
+  font-size: 0.95rem;         /* Slightly smaller text */
+  margin-top: 10px;           /* Space above button */
+  display: inline-block;      /* Allows margin and padding */
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.contact button {
-  background-color: #cc7722;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
+/* === .project-btn:hover: Adds a bounce and color change on hover === */
+.project-btn:hover {
+  background: #1e3a8a;        /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight upward movement */
 }
 
-.contact button:hover {
-  background-color: #aa5f1d;
+/* === form: Styles the contact form layout === */
+form {
+  display: flex;              /* Uses flexbox for layout */
+  flex-direction: column;     /* Stacks form fields vertically */
+  gap: 10px;                  /* Space between fields */
+  margin-bottom: 20px;        /* Space below the form */
 }
 
+/* === input, textarea: Styles for form fields === */
+input,
+textarea {
+  padding: 12px;              /* Space inside fields */
+  border: 1px solid #cbd5e1;  /* Light border */
+  border-radius: 8px;         /* Rounded corners */
+  font-size: 1rem;            /* Standard font size */
+}
+
+/* === .socials: Styles the container for social/contact links === */
+.socials {
+  display: flex;              /* Uses flexbox for layout */
+  flex-direction: column;     /* Stacks links vertically */
+  gap: 10px;                  /* Space between links */
+  margin-top: 20px;           /* Space above the social links */
+}
+
+/* === .socials a: Styles each social/contact link === */
+.socials a {
+  display: flex;              /* Aligns icon and text horizontally */
+  align-items: center;        /* Vertically centers icon and text */
+  gap: 10px;                  /* Space between icon and text */
+  color: #1e3a8a;             /* Blue text color */
+  text-decoration: none;      /* No underline */
+  font-weight: 500;           /* Medium font weight */
+}
+
+/* === .socials a i: Styles the icon in each social link === */
+.socials a i {
+  color: #3b82f6;             /* Blue icon color */
+}
+
+/* === footer: Styles the page footer === */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f4f4f4;
-  margin-top: 30px;
+  background: #1e3a8a;        /* Deep blue background */
+  color: #f8fafc;             /* Light text color */
+  text-align: center;         /* Centers text */
+  padding: 20px;              /* Space inside footer */
+  margin-top: 50px;           /* Space above footer */
+  font-size: 0.95rem;         /* Slightly smaller text */
+}
+
+/* === Responsive fix: switches hero layout to row on wider screens === */
+@media (min-width: 700px) {
+  header.hero {
+    flex-direction: row;      /* Places image and text side by side */
+    justify-content: center;  /* Centers content horizontally */
+    gap: 40px;                /* Space between image and text */
+    text-align: left;         /* Left-aligns text */
+  }
+
+  .hero-right {
+    flex: 1;                  /* Allows text area to grow */
+  }
 }

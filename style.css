@@ -1,205 +1,437 @@
+/* === Google Fonts: Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 /* === Reset default spacing and box-sizing for consistency across browsers === */
 * {
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  box-sizing: border-box; /* Includes border and padding in element's total width/height */
+  margin: 0;                /* Remove default margin */
+  padding: 0;               /* Remove default padding */
+  box-sizing: border-box;   /* Include border and padding in element's total width/height */
 }
 
-/* === Base body styles: sets background, font, and text color for the whole page === */
+/* === Base body styles: background, font, and text color for the whole page === */
 body {
-  background: linear-gradient(to right, #eef2f3, #8e9eab); /* Soft gradient background */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
-  color: #1f2937; /* Deep text color for readability */
-  line-height: 1.6; /* Improves text spacing */
+  background: linear-gradient(to bottom, #f0f4f8, #dbeafe); /* Subtle blue gradient background */
+  font-family: 'Poppins', 'Segoe UI', sans-serif;           /* Modern, clean font */
+  color: #1e293b;                                           /* Deep blue-gray text color */
+  line-height: 1.6;                                         /* Comfortable line spacing */
+  min-height: 100vh;                                        /* Ensure body fills viewport */
+}
+
+/* === MODERN GLASSY NAVIGATION BAR === */
+.main-nav {
+  position: sticky;                /* Sticks nav to top on scroll */
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: rgba(30, 58, 138, 0.85); /* Semi-transparent blue */
+  backdrop-filter: blur(8px);          /* Glass effect */
+  box-shadow: 0 4px 24px rgba(30, 58, 138, 0.10); /* Soft shadow */
+  border-radius: 0 0 18px 18px;       /* Rounded bottom corners */
+  margin-bottom: 0;
+}
+
+/* === Navigation list: horizontal on desktop === */
+.navbar {
+  list-style: none;         /* Remove default list bullets */
+  display: flex;            /* Horizontal layout */
+  justify-content: center;  /* Center items */
+  align-items: center;
+  gap: 36px;                /* Space between links */
+  margin: 0;
+  padding: 0;
+  min-height: 64px;
+  transition: all 0.3s;
+}
+
+/* === Navigation list item === */
+.navbar li {
+  position: relative;
+}
+
+/* === Navigation links: style and hover/focus effects === */
+.navbar li a {
+  color: #f1f5fa;           /* Light text */
+  text-decoration: none;    /* No underline */
+  font-weight: 600;
+  font-size: 1.08rem;
+  padding: 10px 22px;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s, transform 0.18s;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+/* === Navigation link hover/focus/active: highlight and animate === */
+.navbar li a:hover,
+.navbar li a:focus {
+  background: linear-gradient(90deg, #3b82f6 60%, #1e40af 100%); /* Blue gradient on hover */
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.18);              /* Soft shadow on hover */
+  transform: translateY(-2px) scale(1.06);                       /* Slight lift and scale */
+  outline: none;
+}
+
+.navbar li a:active {
+  background: #1e40af;      /* Solid blue on click */
+  color: #fff;
+}
+
+/* === Hamburger menu input: hidden by default === */
+.nav-toggle {
+  display: none;
+}
+
+/* === Hamburger icon label: hidden on desktop, shown on mobile === */
+.nav-toggle-label {
+  display: none;
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* === Hamburger icon bars === */
+.nav-toggle-label span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 4px 0;
+  background: #f1f5fa;      /* Light bar color */
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* === Page Title Block: big, bold, and centered === */
+.page-title {
+  background: #1e3a8a;      /* Deep blue background */
+  padding: 32px 20px 24px 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 12px rgba(30, 58, 138, 0.10); /* Soft shadow */
+  letter-spacing: 1px;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;        /* Large title */
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1.5px;
 }
 
 /* === .container: Centers content and limits its width === */
 .container {
-  max-width: 1200px; /* Maximum width of content */
-  margin: auto;      /* Horizontally centers the container */
-  padding: 20px;     /* Adds space inside the container */
+  max-width: 1200px;        /* Maximum width of content */
+  margin: auto;             /* Center horizontally */
+  padding: 20px;
 }
 
-/* === header.hero: Styles the top hero section with image and intro === */
+/* === header.hero: Top hero section with image and intro === */
 header.hero {
-  display: flex;              /* Uses flexbox for layout */
-  flex-direction: column;     /* Stacks children vertically by default */
-  align-items: center;        /* Centers items horizontally */
-  padding: 50px 20px;         /* Adds space inside the header */
-  background: #f1f5f9;        /* Light background color */
-  border-bottom: 4px solid #3b82f6; /* Blue border at the bottom */
-  text-align: center;         /* Centers text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 40px 20px;
+  background: linear-gradient(120deg, #f1f5f9 60%, #dbeafe 100%); /* Subtle gradient */
+  border-bottom: none;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(30, 58, 138, 0.08); /* Soft shadow */
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 24px;
 }
 
-/* === .hero-img: Styles the profile image in the hero section === */
+/* === .hero-img: Profile image styling === */
 .hero-img {
-  width: 160px;               /* Fixed width */
-  height: 160px;              /* Fixed height */
-  border-radius: 50%;         /* Makes the image circular */
-  object-fit: cover;          /* Ensures image covers the area without distortion */
-  border: 4px solid #3b82f6;  /* Blue border around the image */
-  margin-bottom: 20px;        /* Space below the image */
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;        /* Makes image circular */
+  object-fit: cover;
+  border: 5px solid #3b82f6; /* Blue border */
+  margin-bottom: 24px;
+  box-shadow: 0 4px 24px rgba(59, 130, 246, 0.10); /* Soft shadow */
 }
 
-/* === .hero-right h1: Styles the main heading (name) in the hero section === */
+/* === .hero-right h1: Name in hero section === */
 .hero-right h1 {
-  font-size: 2rem;            /* Large font size */
-  color: #1e3a8a;             /* Deep blue color */
+  font-size: 2.3rem;
+  color: #1e3a8a;            /* Deep blue */
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-/* === .hero-right p: Styles the intro text in the hero section === */
+/* === .hero-right p: Intro text in hero section === */
 .hero-right p {
-  font-size: 1.1rem;          /* Slightly larger text */
-  color: #334155;             /* Muted blue-gray color */
-  max-width: 600px;           /* Limits line length for readability */
+  font-size: 1.15rem;
+  color: #334155;            /* Muted blue-gray */
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* === .section: Styles for each main content section (About, Education, etc.) === */
+/* === .section: Card-like sections for main content === */
 .section {
-  background: #ffffffcc;      /* Semi-transparent white background */
-  margin: 40px 20px;          /* Space around each section */
-  padding: 30px;              /* Space inside each section */
-  border-radius: 16px;        /* Rounded corners */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); /* Subtle shadow for depth */
+  background: #fff;
+  margin: 48px auto;
+  padding: 40px 32px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(30, 58, 138, 0.10); /* Soft shadow */
+  max-width: 900px;
+  transition: box-shadow 0.3s;
 }
 
-/* === .section h2: Styles section headings === */
+.section:hover {
+  box-shadow: 0 12px 40px rgba(30, 58, 138, 0.16); /* Stronger shadow on hover */
+}
+
+/* === .section h2: Section headings === */
 .section h2 {
-  color: #1e40af;             /* Blue heading color */
-  margin-bottom: 15px;        /* Space below heading */
-  font-size: 1.6rem;          /* Larger font size */
-  border-left: 5px solid #3b82f6; /* Blue bar to the left of heading */
-  padding-left: 10px;         /* Space between bar and text */
+  color: #1e40af;            /* Blue heading */
+  margin-bottom: 18px;
+  font-size: 2rem;
+  border-left: 6px solid #3b82f6; /* Blue bar to the left */
+  padding-left: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-/* === .section p, .section li: Styles paragraphs and list items in sections === */
+/* === .section p, .section li: Paragraphs and list items === */
 .section p,
 .section li {
-  font-size: 1rem;            /* Standard font size */
-  color: #1f2937;             /* Main text color */
-  margin-bottom: 10px;        /* Space below each item */
+  font-size: 1.08rem;
+  color: #1f2937;
+  margin-bottom: 10px;
 }
 
-/* === .skills: Styles the list of programming languages as badges === */
+/* === .skills: Stylish skill badges === */
 .skills {
-  list-style: none;           /* Removes default list bullets */
-  display: flex;              /* Lays out badges in a row */
-  flex-wrap: wrap;            /* Allows badges to wrap to next line */
-  gap: 10px;                  /* Space between badges */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 12px;
 }
 
-/* === .skills li: Individual skill badge styling === */
 .skills li {
-  background: #3b82f6;        /* Blue background */
-  color: white;               /* White text */
-  padding: 8px 14px;          /* Padding inside badge */
-  border-radius: 20px;        /* Pill-shaped badge */
-  font-weight: 500;           /* Medium font weight */
+  background: linear-gradient(90deg, #3b82f6 60%, #1e40af 100%); /* Blue gradient badge */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 22px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.10); /* Soft shadow */
+  letter-spacing: 0.5px;
 }
 
-/* === .btn, button[type="submit"]: Styles for buttons and links that look like buttons === */
+/* === .btn, button[type="submit"], .project-btn: Modern buttons === */
 .btn,
-button[type="submit"] {
-  background: #2563eb;        /* Blue background */
-  color: white;               /* White text */
-  padding: 10px 16px;         /* Padding inside button */
-  border: none;               /* No border */
-  border-radius: 8px;         /* Rounded corners */
-  text-decoration: none;      /* Removes underline from links */
-  font-weight: 500;           /* Medium font weight */
-  cursor: pointer;            /* Pointer cursor on hover */
-  transition: background 0.3s ease; /* Smooth background color transition */
-  display: inline-block;      /* Allows margin and padding */
-  margin-top: 10px;           /* Space above button */
-}
-
-/* === .btn:hover, button[type="submit"]:hover: Button hover effect === */
-.btn:hover,
-button[type="submit"]:hover {
-  background: #1e40af;        /* Darker blue on hover */
-}
-
-/* === .project-btn: Styles project links as buttons === */
+button[type="submit"],
 .project-btn {
-  background: #2563eb;        /* Blue background */
-  color: #ffffff !important;  /* White text, overrides other styles */
-  padding: 10px 16px;         /* Padding inside button */
-  border-radius: 6px;         /* Slightly rounded corners */
-  text-decoration: none;      /* No underline */
-  font-weight: 500;           /* Medium font weight */
-  font-size: 0.95rem;         /* Slightly smaller text */
-  margin-top: 10px;           /* Space above button */
-  display: inline-block;      /* Allows margin and padding */
-  transition: background 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: linear-gradient(90deg, #2563eb 60%, #1e40af 100%); /* Blue gradient */
+  color: #fff !important;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block;
+  margin-top: 12px;
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.10); /* Soft shadow */
+  font-size: 1rem;
 }
 
-/* === .project-btn:hover: Adds a bounce and color change on hover === */
+.btn:hover,
+button[type="submit"]:hover,
 .project-btn:hover {
-  background: #1e3a8a;        /* Darker blue on hover */
-  transform: translateY(-2px); /* Slight upward movement */
+  background: #1e40af;       /* Darker blue on hover */
+  transform: translateY(-2px) scale(1.03); /* Slight lift and scale */
 }
 
-/* === form: Styles the contact form layout === */
+/* === Project Cards: Each project in its own card === */
+.project {
+  background: #f8fafc;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(30, 58, 138, 0.07); /* Soft shadow */
+  padding: 24px 20px;
+  margin-bottom: 28px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project:hover {
+  box-shadow: 0 6px 24px rgba(30, 58, 138, 0.13); /* Stronger shadow on hover */
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* === form: Stylish contact form === */
 form {
-  display: flex;              /* Uses flexbox for layout */
-  flex-direction: column;     /* Stacks form fields vertically */
-  gap: 10px;                  /* Space between fields */
-  margin-bottom: 20px;        /* Space below the form */
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
-/* === input, textarea: Styles for form fields === */
 input,
 textarea {
-  padding: 12px;              /* Space inside fields */
-  border: 1px solid #cbd5e1;  /* Light border */
-  border-radius: 8px;         /* Rounded corners */
-  font-size: 1rem;            /* Standard font size */
+  padding: 14px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8fafc;
+  transition: border 0.2s;
 }
 
-/* === .socials: Styles the container for social/contact links === */
+input:focus,
+textarea:focus {
+  border: 1.5px solid #3b82f6; /* Blue border on focus */
+  outline: none;
+}
+
+/* === .socials: Social/contact links === */
 .socials {
-  display: flex;              /* Uses flexbox for layout */
-  flex-direction: column;     /* Stacks links vertically */
-  gap: 10px;                  /* Space between links */
-  margin-top: 20px;           /* Space above the social links */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  align-items: flex-start;
 }
 
-/* === .socials a: Styles each social/contact link === */
 .socials a {
-  display: flex;              /* Aligns icon and text horizontally */
-  align-items: center;        /* Vertically centers icon and text */
-  gap: 10px;                  /* Space between icon and text */
-  color: #1e3a8a;             /* Blue text color */
-  text-decoration: none;      /* No underline */
-  font-weight: 500;           /* Medium font weight */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  transition: color 0.2s;
 }
 
-/* === .socials a i: Styles the icon in each social link === */
 .socials a i {
-  color: #3b82f6;             /* Blue icon color */
+  color: #3b82f6;
+  font-size: 1.2em;
 }
 
-/* === footer: Styles the page footer === */
+.socials a:hover {
+  color: #2563eb; /* Brighter blue on hover */
+}
+
+/* === footer: Polished footer === */
 footer {
-  background: #1e3a8a;        /* Deep blue background */
-  color: #f8fafc;             /* Light text color */
-  text-align: center;         /* Centers text */
-  padding: 20px;              /* Space inside footer */
-  margin-top: 50px;           /* Space above footer */
-  font-size: 0.95rem;         /* Slightly smaller text */
+  background: #1e3a8a;
+  color: #f8fafc;
+  text-align: center;
+  padding: 28px 10px 18px 10px;
+  margin-top: 60px;
+  font-size: 1rem;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -2px 12px rgba(30, 58, 138, 0.08);
 }
 
-/* === Responsive fix: switches hero layout to row on wider screens === */
+/* === Responsive Improvements: layout and nav for mobile === */
 @media (min-width: 700px) {
   header.hero {
-    flex-direction: row;      /* Places image and text side by side */
-    justify-content: center;  /* Centers content horizontally */
-    gap: 40px;                /* Space between image and text */
-    text-align: left;         /* Left-aligns text */
+    flex-direction: row; /* Side-by-side on desktop */
+    justify-content: center;
+    gap: 48px;
+    text-align: left;
   }
-
   .hero-right {
-    flex: 1;                  /* Allows text area to grow */
+    flex: 1;
+    text-align: left;
+  }
+  .section {
+    padding: 48px 56px;
+  }
+  .skills {
+    justify-content: flex-start;
+  }
+  .socials {
+    align-items: flex-end;
+  }
+}
+
+/* === Responsive: collapse nav to hamburger on small screens === */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column; /* Stack nav links vertically */
+    align-items: flex-start;
+    background: rgba(30, 58, 138, 0.97);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 24px 0 16px 0;
+    gap: 0;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 8px 32px rgba(30, 58, 138, 0.13);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+  .navbar li {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+  .navbar li a {
+    display: block;
+    width: 100%;
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    border-radius: 0;
+    border-left: 4px solid transparent;
+    transition: background 0.18s, color 0.18s, border 0.18s;
+  }
+  .navbar li a:hover,
+  .navbar li a:focus {
+    background: #3b82f6;
+    color: #fff;
+    border-left: 4px solid #1e40af;
+    transform: none;
+  }
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right: 24px;
+    top: 18px;
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+    z-index: 201;
+  }
+  .nav-toggle-label {
+    display: flex;
+  }
+  .main-nav {
+    position: relative;
+  }
+  .nav-toggle:checked ~ .navbar {
+    max-height: 500px;
+    transition: max-height 0.4s;
+  }
+  /* Hamburger animation: turns into X when open */
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* === Extra spacing below nav for mobile === */
+@media (max-width: 900px) {
+  .page-title {
+    padding-bottom: 12px;
   }
 }

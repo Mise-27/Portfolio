@@ -1,122 +1,120 @@
 <!DOCTYPE html> <!-- Declares this document as HTML5 -->
 <html lang="en"> <!-- Root element; sets language to English -->
-<head>
+<head> <!-- Contains meta and link info for the page -->
   <meta charset="UTF-8" /> <!-- Sets character encoding to UTF-8 for proper text rendering -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures responsive scaling on all devices -->
   <title>Olajesu Tunmise | Portfolio</title> <!-- Sets the title shown in the browser tab -->
+  <!-- Add Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" /> <!-- Links to external CSS for styling -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- Loads Font Awesome icons from CDN -->
 </head>
-<body> <!-- Contains all visible content of the web page -->
+<body> <!-- Main page content starts here -->
 
-  <!-- <header>: Introduces the site and usually contains branding or introductory content -->
-  <header class="hero container">
-    <!-- <div>: Groups the profile image on the left side of the hero section -->
-    <div class="hero-left">
-      <!-- <img>: Displays the user's profile picture -->
-      <img src="Mise.png" alt="Olajesu's Profile Picture" class="hero-img" />
+  <div class="page-title"> <!-- Displays the portfolio title at the top for visual balance -->
+    <h1>Olajesu Tunmise's Portfolio</h1>
+  </div>
+
+  <nav aria-label="Main navigation" class="main-nav"> <!-- Navigation bar: lets users jump to sections -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu"> <!-- Hamburger menu toggle for mobile -->
+    <label for="nav-toggle" class="nav-toggle-label"> <!-- Hamburger icon for mobile nav -->
+      <span></span> <!-- Hamburger bar 1 -->
+      <span></span> <!-- Hamburger bar 2 -->
+      <span></span> <!-- Hamburger bar 3 -->
+    </label>
+    <ul class="navbar"> <!-- Navigation links to page sections -->
+      <li><a href="#about">About</a></li> <!-- Navigates to About section -->
+      <li><a href="#education">Education</a></li> <!-- Navigates to Education section -->
+      <li><a href="#skills">Skills</a></li> <!-- Navigates to Skills section -->
+      <li><a href="#interests">Interests</a></li> <!-- Navigates to Interests section -->
+      <li><a href="#projects">Projects</a></li> <!-- Navigates to Projects section -->
+      <li><a href="#contact">Contact</a></li> <!-- Navigates to Contact section -->
+    </ul>
+  </nav>
+
+  <header class="hero container" role="banner"> <!-- Hero section: profile image and intro -->
+    <div class="hero-left"> <!-- Left side: profile image -->
+      <img src="Mise.png" alt="Olajesu's Profile Picture" class="hero-img" /> <!-- Displays the user's profile picture -->
     </div>
-    <!-- <div>: Groups the name and intro text on the right side of the hero section -->
-    <div class="hero-right">
-      <!-- <h1>: Main heading, displays the user's name -->
-      <h1>Olajesu (Emmanuel) Tunmise</h1>
-      <!-- <p>: Short introduction or tagline -->
-      <p>Data-driven problem solver passionate about AI in agriculture & tech transformation in Africa.</p>
+    <div class="hero-right"> <!-- Right side: name and intro -->
+      <h1>Olajesu (Emmanuel) Tunmise</h1> <!-- Main heading, displays the user's name -->
+      <p>Data-driven problem solver passionate about AI in agriculture & tech transformation in Africa.</p> <!-- Short introduction or tagline -->
     </div>
   </header>
 
-  <!-- <section>: Defines a thematic grouping of content, here for "About Me" -->
-  <section id="about" class="section">
-    <!-- <h2>: Section heading for "About Me" -->
-    <h2>About Me</h2>
-    <!-- <p>: Describes the user's motivation and focus -->
-    <p>
-      My passion for tech is fueled by the need to solve real problems in Nigeria specifically, and Africa at large, especially in agriculture.
-      Despite its importance, the sector remains largely untouched by modern technology and AI. I’m driven by the desire to bring smart, data-driven solutions to farming—things like AI for crop monitoring, weather prediction, and efficient resource use. Beyond agriculture, I’m passionate about helping African firms integrate technology to improve their operations and stay competitive.
-    </p>
-  </section>
+  <main role="main"> <!-- Main content area -->
+    <section id="about" class="section"> <!-- About Me section -->
+      <h2>About Me</h2>
+      <p>
+        My passion for tech is fueled by the need to solve real problems in Nigeria specifically, and Africa at large, especially in agriculture.
+        Despite its importance, the sector remains largely untouched by modern technology and AI. I’m driven by the desire to bring smart, data-driven solutions to farming—things like AI for crop monitoring, weather prediction, and efficient resource use. Beyond agriculture, I’m passionate about helping African firms integrate technology to improve their operations and stay competitive.
+      </p>
+    </section>
 
-  <!-- <section>: Groups educational background information -->
-  <section id="education" class="section">
-    <h2>Educational Background</h2>
-    <p>
-      BSc. Chemical Engineering – Lagos State University, Ojo <br />
-      Second Class Upper Division (2025)
-    </p>
-    <!-- <a>: Download link for the user's CV -->
-    <a href="Tunmise_Olajesu_CV.pdf" class="btn" download>📄 Download CV</a>
-  </section>
+    <section id="education" class="section"> <!-- Education section -->
+      <h2>Educational Background</h2>
+      <p>
+        BSc. Chemical Engineering – Lagos State University, Ojo <br />
+        Second Class Upper Division (2025)
+      </p>
+      <a href="Tunmise_Olajesu_CV.pdf" class="btn" download>📄 Download CV</a> <!-- Downloadable CV link -->
+    </section>
 
-  <!-- <section>: Lists programming languages/skills -->
-  <section id="skills" class="section">
-    <h2>Programming Languages</h2>
-    <!-- <ul>: Unordered list of skills -->
-    <ul class="skills">
-      <!-- <li>: List item for each programming language -->
-      <li>Python</li>
-      <li>SQL</li>
-      <li>HTML</li>
-      <li>CSS</li>
-    </ul>
-  </section>
+    <section id="skills" class="section"> <!-- Skills section -->
+      <h2>Programming Languages</h2>
+      <ul class="skills"> <!-- Undered list of programming languages -->
+        <li>Python</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </section>
 
-  <!-- <section>: Lists the user's interests -->
-  <section id="interests" class="section">
-    <h2>Interests</h2>
-    <ul>
-      <li><strong>Artificial Intelligence:</strong> Building intelligent systems to address real-world challenges.</li>
-      <li><strong>Data Science:</strong> Leveraging data for smarter decision-making.</li>
-      <li><strong>Software Development:</strong> Crafting practical, innovative tools.</li>
-      <li><strong>Web Development:</strong> Creating modern, responsive apps with good UX.</li>
-    </ul>
-  </section>
+    <section id="interests" class="section"> <!-- Interests section -->
+      <h2>Interests</h2>
+      <ul> <!-- Unordered list of interests -->
+        <li><strong>Artificial Intelligence:</strong> Building intelligent systems to address real-world challenges.</li>
+        <li><strong>Data Science:</strong> Leveraging data for smarter decision-making.</li>
+        <li><strong>Software Development:</strong> Crafting practical, innovative tools.</li>
+        <li><strong>Web Development:</strong> Creating modern, responsive apps with good UX.</li>
+      </ul>
+    </section>
 
-  <!-- <section>: Showcases the user's projects -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
+    <section id="projects" class="section"> <!-- Projects section -->
+      <h2>Projects</h2>
+      <div class="project"> <!-- Project 1 card -->
+        <h3>Stock Data Analysis</h3>
+        <p>IBM class project that compares GameStop and Tesla stock data using Python and pandas.</p>
+        <a href="https://github.com/Mise-27/IBM-Data-Science-Projects" target="_blank" class="project-btn">🔗 View Project</a> <!-- Link to project repository -->
+      </div>
+      <div style="height: 30px;"></div> <!-- Spacer between projects -->
+      <div class="project"> <!-- Project 2 card -->
+        <h3>Python Calculator</h3>
+        <p>Simple calculator built with Python for a PLP Academy assignment.</p>
+        <a href="https://github.com/Mise-27/PLP-Academy-Assignments" target="_blank" class="project-btn">🔗 View Project</a>
+      </div>
+    </section>
 
-    <!-- <div>: Container for a single project -->
-    <div class="project">
-      <h3>Stock Data Analysis</h3> <!-- <h3>: Project title -->
-      <p>IBM class project that compares GameStop and Tesla stock data using Python and pandas.</p>
-      <!-- <a>: Link to the project repository -->
-      <a href="https://github.com/Mise-27/IBM-Data-Science-Projects" target="_blank" class="project-btn">🔗 View Project</a>
-    </div>
+    <section id="contact" class="section"> <!-- Contact section -->
+      <h2>Contact Me</h2>
+      <form> <!-- Contact form for user messages -->
+        <input type="text" placeholder="Your Name" required aria-label="Your Name"> <!-- Name input -->
+        <input type="email" placeholder="Your Email" required aria-label="Your Email"> <!-- Email input -->
+        <textarea placeholder="Please, type in your message" rows="5" required aria-label="Your Message"></textarea> <!-- Message textarea -->
+        <button type="submit">Send Message</button> <!-- Submit button -->
+      </form>
+      <div class="socials"> <!-- Groups all social/contact links together -->
+        <a href="mailto:olajesusemi027@gmail.com"><i class="fas fa-envelope"></i> Email</a> <!-- Opens email client to send an email -->
+        <a href="https://github.com/Mise-27" target="_blank"><i class="fab fa-github"></i> GitHub</a> <!-- Navigates to GitHub profile -->
+        <a href="https://linkedin.com/in/tunmise-olajesu-820baa248" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> <!-- Navigates to LinkedIn profile -->
+        <a href="https://wa.me/2349021949942" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: +234 902 194 9942</a> <!-- Opens WhatsApp chat -->
+        <a href="tel:+2349021949942"><i class="fas fa-phone"></i> Call: +234 902 194 9942</a> <!-- Initiates a phone call -->
+      </div>
+    </section>
+  </main>
 
-    <div style="height: 30px;"></div> <!-- Spacer between projects -->
-
-    <div class="project">
-      <h3>Python Calculator</h3>
-      <p>Simple calculator built with Python for a PLP Academy assignment.</p>
-      <a href="https://github.com/Mise-27/PLP-Academy-Assignments" target="_blank" class="project-btn">🔗 View Project</a>
-    </div>
-  </section>
-
-  <!-- <section>: Contact form and social links -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <!-- <form>: Collects user messages -->
-    <form>
-      <input type="text" placeholder="Your Name" required> <!-- <input>: User's name -->
-      <input type="email" placeholder="Your Email" required> <!-- <input>: User's email -->
-      <textarea placeholder="Please, type in your message" rows="5" required></textarea> <!-- <textarea>: User's message -->
-      <button type="submit">Send Message</button> <!-- <button>: Submits the form -->
-    </form>
-
-    <!-- <div>: Contains social and contact links -->
-    <div class="socials">
-      <a href="mailto:olajesusemi027@gmail.com"><i class="fas fa-envelope"></i> Email</a> <!-- <a>: Email link -->
-      <a href="https://github.com/Mise-27" target="_blank"><i class="fab fa-github"></i> GitHub</a> <!-- <a>: GitHub profile -->
-      <a href="https://linkedin.com/in/tunmise-olajesu-820baa248" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> <!-- <a>: LinkedIn profile -->
-      <a href="https://wa.me/2349021949942" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: +234 902 194 9942</a> <!-- <a>: WhatsApp chat -->
-      <a href="tel:+2349021949942"><i class="fas fa-phone"></i> Call: +234 902 194 9942</a> <!-- <a>: Phone call link -->
-    </div>
-  </section>
-
-  <!-- <footer>: Contains copyright and site info -->
-  <footer>
+  <footer role="contentinfo"> <!-- Footer: copyright and site info -->
     <p>&copy; 2025 Olajesu Tunmise. Built for PLP Hackathon using pure HTML & CSS.</p>
   </footer>
-
-</body> <!-- End of page content -->
-</html>
+</body> <!-- End of page content/body -->
+</html> <!-- End of HTML document -->

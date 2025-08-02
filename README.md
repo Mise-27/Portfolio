@@ -7,7 +7,7 @@ It highlights my skills, background, projects, and passions in tech — especial
 **Hosted on GitHub Pages: [Click here](https://Mise-27.github.io/Portfolio/)**
 
 
-## 📸 Preview
+## 👀 Preview
 ![Preview] <img width="1893" height="909" alt="image" src="https://github.com/user-attachments/assets/cb3e6555-5167-4a24-a5f8-bc2ff10b623c" />
 <img width="1900" height="896" alt="image" src="https://github.com/user-attachments/assets/9d4f8c32-e928-4071-be22-c1d5352f7a85" />
 <img width="1887" height="683" alt="image" src="https://github.com/user-attachments/assets/a6f5bb98-9ae4-4259-b98d-18237436f569" />

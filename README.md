@@ -9,8 +9,6 @@ This site showcases my journey, skills, and projects as a data-driven problem so
 
 **View the portfolio:** [Mise-27.github.io/Portfolio](https://Mise-27.github.io/Portfolio/)
 
----
-
 
 
 ---
